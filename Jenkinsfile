@@ -81,7 +81,7 @@ pipeline {
                         echo "User chose to Destroy the Terraform plan."
                         sh '''
                             terraform destroy -auto-approve
-                            // post destroy clean up
+                            # post destroy clean up
                             echo "Cleaning up the Terraform state storage resources."
                             az group delete -n $TF_STATE_RG -y
                         '''
