@@ -13,7 +13,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 sh 'echo "Checking out the code from the repository."'
-                git credentialsId: 'github_pat', branch: 'main', url: 'https://github.com/SaiAnilKumarDeyyala/azure-terraform-jenkins-automation.git'
+                git credentialsId: 'github_pat', branch: 'main', url: 'https://github.com/SaiAnilKumarDeyyala/azure-jenkins-terraform-automation-project'
             }
         }
 
