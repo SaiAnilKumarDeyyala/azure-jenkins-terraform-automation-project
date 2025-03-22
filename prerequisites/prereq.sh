@@ -33,3 +33,5 @@ echo "Installing git"
 sudo apt-get install git -y
 git --version
 
+echo "Prerequisites installed successfully........"
+
