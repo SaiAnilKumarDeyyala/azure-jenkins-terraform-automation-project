@@ -1,6 +1,8 @@
 resource_group_name = "jenkins-test-rg"
 tags = {
   "created_by" = "terraform"
+  "created_on" = timestamp()
+  "environment" = "dev"
 }
 
 ## V-NET ###
